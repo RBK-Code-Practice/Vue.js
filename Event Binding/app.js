@@ -20,7 +20,7 @@ const app=Vue.createApp({
 
     computed:{
         fullMonth(){
-            console.log("called")
+            console.log("this is called")
             return this.fullMonth=this.month
 
         }

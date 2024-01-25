@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+
+        <h1>Todo List</h1>
+
+        <input type="text" v-model="enteredTask"/>
+        <button v-on:click="addTask">Add</button>
+        <p v-show="tasks.length==0">No Todos has been added</p>
+        <ul v-else>
+            <li v-for="(task,index) in tasks" v-on:click="removeTask(index)">{{task}}</li>
+
+        </ul>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

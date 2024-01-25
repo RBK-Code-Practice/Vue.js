@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" style="display: flex; justify-content: center;align-items: center;flex-direction: column;">
+    <header>
+        <h1>Vue Js Topic</h1>
+    </header>
+    <section>
+        <h2>Topic :{{topic}}</h2> 
+        <!-- Interpolation Suntax -->
+        <h2>{{time}}</h2>
+        <p>{{getTopic()}}</p>
+        <p>To learn more <a v-bind:href="link">Click here</a></p>
+        <p>{{count}}</p>
+
+    </section>
+    <div v-html="content">
+    </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="app.js"></script>
+            
+</body>
+</html>

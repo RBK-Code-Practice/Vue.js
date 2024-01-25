@@ -5,7 +5,7 @@ const app=Vue.createApp({
         return {
             count:0,
             month:'',
-            fullMonth:""
+            fullMonth:"" 
         }
     },
 
@@ -36,7 +36,6 @@ const app=Vue.createApp({
             this.month=event.target.value
         },
         displayMonth(){
-            console.log("called")
             if(this.month=='') return
             
             return this.fullMonth=`${this.month} 2024`
